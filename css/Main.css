@@ -18,6 +18,7 @@ body {
   padding: 0px;
   background: #ffffff;
   border-bottom: 1px solid gray;
+  z-index: 100;
 }
 
 #title {
@@ -34,15 +35,31 @@ body {
 }
 
 .MainImage {
+  position: relative;
   margin-top: 55px;
 }
 /* 이미지를 자동으로 화면에 맞게 리사이즈 되도록 */
-.MainImage img {
+#mainImage {
     max-width: 100%; /* 이미지의 최대사이즈 */
     width /***/: auto; /* IE8 */
     height: auto;
     vertical-align: bottom;
 }
 
-#mainImage {
+#studentRegister {
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 30px;
+  left: 55%;
+  top: 80%;
+}
+
+#teacherRegister {
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 30px;
+  right: 55%;
+  top: 80%;
 }

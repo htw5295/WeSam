@@ -2,6 +2,7 @@ html {
   margin: 0px;
   padding: 0px;
 }
+
 body {
   margin: 0px;
   padding: 0px;
@@ -31,19 +32,37 @@ body {
 #login {
   margin-top: 10px;
   height: 30px;
-  float:right;
+  float: right;
 }
 
 .MainImage {
   position: relative;
   margin-top: 55px;
 }
+
+
 /* 이미지를 자동으로 화면에 맞게 리사이즈 되도록 */
+
 #mainImage {
-    max-width: 100%; /* 이미지의 최대사이즈 */
-    width /***/: auto; /* IE8 */
-    height: auto;
-    vertical-align: bottom;
+  max-width: 100%;
+  /* 이미지의 최대사이즈 */
+  width/***/
+  : auto;
+  /* IE8 */
+  height: auto;
+  vertical-align: bottom;
+}
+
+#MainParagraph {
+  display: block;
+  margin: 0px;
+  color: white;
+  font-size: 54px;
+  width: 100%;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  top: 10%;
 }
 
 #studentRegister {
@@ -62,4 +81,36 @@ body {
   height: 30px;
   right: 55%;
   top: 80%;
+}
+
+.PromotionVideo {
+  min-height: 500px;
+}
+
+#promotion, #what {
+  text-align: center;
+}
+
+/*유튜브 iframe 높이 제한 해제 */
+.IframeDiv {
+  position: relative;
+  left: 10%;
+  width: 80%;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+#promotionVideo {
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position : absolute;
+  top : 0; left : 0;  bottom : 0; right : 0;
+}
+
+.What {
 }

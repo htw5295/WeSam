@@ -8,6 +8,12 @@ body {
   padding: 0px;
 }
 
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid blue;
+}
+
 .MenuBar {
   top: 0px;
   width: 100%;
@@ -84,33 +90,110 @@ body {
 }
 
 .PromotionVideo {
-  min-height: 500px;
-}
-
-#promotion, #what {
   text-align: center;
 }
 
-/*유튜브 iframe 높이 제한 해제 */
-.IframeDiv {
-  position: relative;
-  left: 10%;
-  width: 80%;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-
-#promotionVideo {
-  width: 100%;
-  height: 100%;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  position : absolute;
-  top : 0; left : 0;  bottom : 0; right : 0;
+h1 {
+  text-align: center;
 }
 
 .What {
+  text-align: center;
+}
+
+.Trust {
+  width: 20%;
+  height: 400px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid blue;
+  border-radius: 20px;
+  margin-right: 10%;
+}
+
+#trustImg {
+  width: 150px;
+  height: 150px;
+}
+
+.Match {
+  width: 20%;
+  height: 400px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid blue;
+  border-radius: 20px;
+}
+
+#matchImg {
+  width: 150px;
+  height: 150px;
+}
+
+.Manage {
+  width: 20%;
+  height: 400px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid blue;
+  border-radius: 20px;
+  margin-left: 10%;
+}
+
+#manageImg {
+  width: 150px;
+  height: 150px;
+}
+
+.Why {
+
+}
+
+.Student {
+  width: 30%;
+  height: 400px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid blue;
+  border-radius: 20px;
+  margin-left: 15%;
+}
+
+#studentImg {
+  width: 150px;
+  height: 150px;
+}
+
+.Teacher {
+  width: 30%;
+  height: 400px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid blue;
+  border-radius: 20px;
+  margin-right: 15%;
+  float: right;
+}
+
+#teacherImg {
+  width: 150px;
+  height: 150px;
+}
+
+.TeacherPromotionVideo {
+  width: 40%;
+  margin-left: 5%;
+  float: left;
+}
+
+.TeacherPromotionSpec {
+  margin-left: 5%;
+  width: 40%;
+  float: left;
+}
+
+.Determination {
+  clear: both;
+  padding-top: 10px;
+  margin-left: 5%;
 }

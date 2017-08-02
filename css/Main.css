@@ -56,7 +56,6 @@ hr {
 
 
 /* 이미지를 자동으로 화면에 맞게 리사이즈 되도록 */
-
 #mainImage {
   max-width: 100%;
   /* 이미지의 최대사이즈 */
@@ -202,12 +201,12 @@ h1 {
 
 .TeacherPromotionVideo {
   width: 40%;
-  margin-left: 5%;
+  margin-left: 10%;
   float: left;
 }
 
 .TeacherPromotionSpec {
-  margin-left: 5%;
+  margin-left: 10%;
   width: 40%;
   float: left;
 }
@@ -215,5 +214,46 @@ h1 {
 .Determination {
   clear: both;
   padding-top: 10px;
-  margin-left: 5%;
+  margin-left: 10%;
+}
+
+.ReviewSub {
+  width: 100%;
+}
+
+.ReviewProfile {
+  float: left;
+  width: 40%;
+  margin-left: 10%;
+}
+
+.ReviewGraph {
+  float: left;
+  width: 40%;
+  height: 200px;
+  margin-left: 10%;
+}
+
+.SlideButton {
+  text-align: center;
+  display: inline-block;
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#top:hover {
+  background-color: #555;
 }

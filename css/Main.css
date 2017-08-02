@@ -76,6 +76,7 @@ hr {
   margin-top: 50px;
   color: white;
   font-size: 58px;
+  font-family: 'Pacifico';
   width: 100%;
   font-weight: bold;
   position: absolute;
@@ -83,7 +84,7 @@ hr {
   top: 10%;
 }
 
-#studentRegister {
+#teacherRegister {
   position: absolute;
   display: block;
   width: 160px;
@@ -98,7 +99,7 @@ hr {
   background-color: white;
 }
 
-#teacherRegister {
+#studentRegister {
   position: absolute;
   display: block;
   width: 160px;

@@ -6,23 +6,44 @@
   <title>위샘 - WeSam</title>
   <link rel="stylesheet" type="text/css" href="../css/Main.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <script type="text/javascript" src="../js/Main.js"></script>
 </head>
 
 <body>
   <div class="MenuBar">
     <h1 id="title">WeSam</h1>
-    <button id="login">Login</button>
+    <button id="menuTeacherRegister">교사 등록</button>
+    <button id="menuStudentRegister">학생 등록</button>
+    <button id="login">로그인</button>
   </div>
   <button onclick="topFunction()" id="top">Top</button>
   <div class="MainImage">
     <img id="mainImage" src="../img/MainImage.jpg">
-    <p id="MainParagraph">
-      <font color="#00eeff">WeSam</font><br>믿을 수 있는<br> 맞춤형 개인 과외 서비스<br>
-    </p>
-    <button id="studentRegister">학생 등록</button>
-    <button id="teacherRegister">교사 등록</button>
-    <h1 id="studentCount">0명</h3>
-    <h1 id="teacherCount">0명</h3>
+    <table class="MainImageTable">
+      <tr>
+        <td colspan="2">
+          <p id="MainParagraph">
+            <font color="#0d1347">WeSam</font><br>믿을 수 있는<br> 맞춤형 개인 과외 서비스<br>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="studentRegister">학생 등록</button>
+        </td>
+        <td>
+          <button id="teacherRegister">교사 등록</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h1 id="studentCount">123,456명</h1>
+        </td>
+        <td>
+          <h1 id="teacherCount">654,321명</h1>
+        </td>
+      </tr>
+    </table>
   </div>
   <hr>
   <div class="PromotionVideo">
@@ -94,11 +115,11 @@
         <p>경력 : </p>
         <p>과목 : </p>
         <p>비용 : </p>
+        <h2>각오 한마디!</h2>
+        <p>블라블라블라블라블라블라블라블라</p>
       </div>
     </div>
-    <div class="Determination">
-      <h2>각오 한마디!</h2>
-      <p>블라블라블라블라블라블라블라블라</p>
+    <div class="ClearDiv">
     </div>
   </div>
   <hr>
@@ -127,18 +148,20 @@
   </div>
   <hr>
   <div class="End">
-    <h1 id="endTitle">WeSam</h1>
-    <h2>개인 과외 맞춤 서비스</h2>
-    <p>블라블라블라블라블라</p>
-    <p>블라블라블라블라블라</p>
-    <center>
-      <button id="endStudentRegister">학생 등록하기</button>
-      <button id="endTeacherRegister">교사 등록하기</button>
-    </center>
-    <center>
-      <button id="call">전화하기 042-000-0000</button>
-      <button id="kakaotalk">카카오톡 문의하기</button>
-    </center>
+    <div class="EndLeft">
+    </div>
+    <div class="EndCenter">
+      <h1 id="endTitle">WeSam</h1>
+      <h2>개인 과외 맞춤 서비스</h2>
+      <p>블라블라블라블라블라</p>
+      <p>블라블라블라블라블라</p>
+      <center>
+        <button id="endStudentRegister">학생 등록하기</button>
+        <button id="endTeacherRegister">교사 등록하기</button>
+      </center>
+    </div>
+    <div class="EndRight">
+    </div>
   </div>
 </body>
 </html>

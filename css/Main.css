@@ -45,16 +45,64 @@ hr {
   width: 60px;
   height: 30px;
   float: right;
-  border: 2px solid rgb(13, 19, 71);
+  border: 2px solid #144366;
   border-radius: 30px;
-  color: rgb(13, 19, 71);
+  color: #144366;
   font-size: 13px;
   padding: 0px;
   background-color: white;
 }
 
+#login:hover {
+  background-color: gray;
+}
+
+#menuTeacherRegister {
+  margin-top: 13px;
+  margin-right: 16px;
+  width: 80px;
+  height: 30px;
+  float: right;
+  border: 2px solid #144366;
+  border-radius: 30px;
+  color: #144366;
+  font-size: 13px;
+  padding: 0px;
+  background-color: white;
+}
+
+#menuTeacherRegister:hover {
+  background-color: gray;
+}
+
+#menuStudentRegister {
+  margin-top: 13px;
+  margin-right: 16px;
+  width: 80px;
+  height: 30px;
+  float: right;
+  border: 2px solid #144366;
+  border-radius: 30px;
+  color: #144366;
+  font-size: 13px;
+  padding: 0px;
+  background-color: white;
+}
+
+#menuStudentRegister:hover {
+  background-color: gray;
+}
+
 .MainImage {
   position: relative;
+}
+
+.MainImageTable {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -316px;
+  text-align: center;
 }
 
 
@@ -77,56 +125,53 @@ hr {
   font-family: 'Pacifico';
   width: 100%;
   font-weight: bold;
-  position: absolute;
   text-align: center;
   top: 20%;
 }
 
-#teacherRegister {
-  position: absolute;
+.MainButtonDiv {
   display: block;
-  width: 160px;
-  height: 80px;
-  left: 52%;
-  top: 55%;
-  border: 2px solid rgb(13, 19, 71);
-  border-radius: 50px;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0px;
-  background-color: rgb(13, 19, 71);
 }
 
-#studentRegister {
-  position: absolute;
-  display: block;
+#teacherRegister {
   width: 160px;
   height: 80px;
-  right: 52%;
-  top: 55%;
-  border: 2px solid rgb(13, 19, 71);
+  border: 5px solid #0d1347;
   border-radius: 50px;
-  color: rgb(13, 19, 71);
+  color: #0d1347;
   font-size: 20px;
   font-weight: bold;
   padding: 0px;
   background-color: white;
 }
 
+#teacherRegister:hover {
+  background-color: gray;
+}
+
+#studentRegister {
+  width: 160px;
+  height: 80px;
+  border: 5px solid #0d1347;
+  border-radius: 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px;
+  background-color: #0d1347;
+}
+
+#studentRegister:hover {
+  color: gray;
+}
+
 #teacherCount {
-  position: absolute;
   display: block;
-  left: 55%;
-  top: 60%;
   color: white;
 }
 
 #studentCount {
-  position: absolute;
   display: block;
-  right: 55%;
-  top: 60%;
   color: white;
 }
 
@@ -147,9 +192,10 @@ h1 {
   height: 400px;
   text-align: center;
   display: inline-block;
-  border: 2px solid rgb(13, 19, 71);
+  border: 5px solid rgb(13, 19, 71);
   border-radius: 20px;
   margin-right: 10%;
+  padding-top: 20px;
 }
 
 #trustImg {
@@ -162,8 +208,9 @@ h1 {
   height: 400px;
   text-align: center;
   display: inline-block;
-  border: 2px solid rgb(13, 19, 71);
+  border: 5px solid rgb(13, 19, 71);
   border-radius: 20px;
+  padding-top: 20px;
 }
 
 #matchImg {
@@ -176,9 +223,10 @@ h1 {
   height: 400px;
   text-align: center;
   display: inline-block;
-  border: 2px solid rgb(13, 19, 71);
+  border: 5px solid rgb(13, 19, 71);
   border-radius: 20px;
   margin-left: 10%;
+  padding-top: 20px;
 }
 
 #manageImg {
@@ -195,9 +243,10 @@ h1 {
   height: 400px;
   text-align: center;
   display: inline-block;
-  border: 2px solid rgb(13, 19, 71);
+  border: 5px solid rgb(13, 19, 71);
   border-radius: 20px;
   margin-left: 15%;
+  padding-top: 20px;
 }
 
 #studentImg {
@@ -210,10 +259,11 @@ h1 {
   height: 400px;
   text-align: center;
   display: inline-block;
-  border: 2px solid rgb(13, 19, 71);
+  border: 5px solid rgb(13, 19, 71);
   border-radius: 20px;
   margin-right: 15%;
   float: right;
+  padding-top: 20px;
 }
 
 #teacherImg {
@@ -233,14 +283,11 @@ h1 {
   float: left;
 }
 
-.Determination {
+.ClearDiv {
   clear: both;
-  padding-top: 10px;
-  margin-left: 10%;
 }
 
 .Review {
-  background-color: gray;
 }
 
 .ReviewSub {
@@ -248,10 +295,12 @@ h1 {
 }
 
 .ReviewProfile {
+  border: 5px solid rgb(13, 19, 71);
+  border-radius: 20px;
   float: left;
-  width: 40%;
+  width: 35%;
   margin-left: 10%;
-    display: inline-block;
+  display: inline-block;
 }
 
 .ReviewProfileImage {
@@ -261,6 +310,7 @@ h1 {
 #reviewProfileImage {
   width: 180px;
   height: 270px;
+  border-radius: 20px;
 }
 
 .ReviewProfileContent {
@@ -269,12 +319,16 @@ h1 {
 
 .ReviewGraph {
   float: left;
-  width: 40%;
-  height: 200px;
+  width: 35%;
+  margin-left: 10%;
+  border: 5px solid rgb(13, 19, 71);
+  border-radius: 20px;
+  text-align: center;
 }
 
 #reviewGraph {
   height: 270px;
+  border-radius: 20px;
 }
 
 .ReviewStars {
@@ -302,6 +356,38 @@ h1 {
   color: rgb(13, 19, 71);
 }
 
+#endStudentRegister {
+  width: 160px;
+  height: 80px;
+  border: 5px solid #0d1347;
+  border-radius: 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px;
+  background-color: #0d1347;
+}
+
+#endStudentRegister:hover {
+  color: gray;
+}
+
+#endTeacherRegister {
+  width: 160px;
+  height: 80px;
+  border: 5px solid #0d1347;
+  border-radius: 50px;
+  color: #0d1347;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px;
+  background-color: white;
+}
+
+#endTeacherRegister:hover {
+  background-color: gray;
+}
+
 #top {
   display: none;
   position: fixed;
@@ -310,7 +396,7 @@ h1 {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: rgb(13, 19, 71);
   color: white;
   cursor: pointer;
   padding: 15px;

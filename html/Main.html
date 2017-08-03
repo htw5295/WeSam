@@ -15,12 +15,14 @@
   </div>
   <button onclick="topFunction()" id="top">Top</button>
   <div class="MainImage">
-    <img id="mainImage" src="../img/MainImage2.jpg">
+    <img id="mainImage" src="../img/MainImage.jpg">
     <p id="MainParagraph">
-      <font color="blue">WeSam</font><br> 믿을 수 있는<br> 맞춤형 개인 과외 서비스<br>
+      <font color="#00eeff">WeSam</font><br>믿을 수 있는<br> 맞춤형 개인 과외 서비스<br>
     </p>
-    <button id="studentRegister">학생 등록하기</button>
-    <button id="teacherRegister">교사 등록하기</button>
+    <button id="studentRegister">학생 등록</button>
+    <button id="teacherRegister">교사 등록</button>
+    <h1 id="studentCount">0명</h3>
+    <h1 id="teacherCount">0명</h3>
   </div>
   <hr>
   <div class="PromotionVideo">
@@ -31,7 +33,7 @@
   </div>
   <hr>
   <div class="What">
-    <h1 id="what">What is WeSam</h1>
+    <h1 id="what">What is <span style="font-family: pacifico; color: rgb(13, 19, 71);">WeSam</span></h1>
     <div class="IconDiv">
       <div class="Trust">
         <img id="trustImg" src="../img/trust.png">
@@ -58,7 +60,7 @@
   </div>
   <hr>
   <div class="Why">
-    <h1 id="why">Why is WeSam?</h1>
+    <h1 id="why">Why is <span style="font-family: pacifico; color: rgb(13, 19, 71);">WeSam?</span></h1>
     <div class="IconDiv">
       <div class="Student">
         <img id="studentImg" src="../img/student.png">
@@ -102,17 +104,21 @@
   <hr>
   <div class="Review">
     <div class="ReviewProfile">
-      <img id="reviewProfileImgae" src="../img/student1.png">
-      <h2>NickName</h2>
-      <img class="ReviewStars" id="star1" src="../img/star.png">
-      <img class="ReviewStars" id="star2" src="../img/star.png">
-      <img class="ReviewStars" id="star3" src="../img/star.png">
-      <img class="ReviewStars" id="star4" src="../img/star.png">
-      <img class="ReviewStars" id="star5" src="../img/star.png">
-      <p>블라블라블라블라블라블라</p>
+      <div class="ReviewProfileImage">
+        <img id="reviewProfileImage" src="../img/student1.png">
+      </div>
+      <div class="ReviewProfileContent">
+        <h2>박보영 학생 / 고3</h2>
+        <img class="ReviewStars" id="star1" src="../img/star.png">
+        <img class="ReviewStars" id="star2" src="../img/star.png">
+        <img class="ReviewStars" id="star3" src="../img/star.png">
+        <img class="ReviewStars" id="star4" src="../img/star.png">
+        <img class="ReviewStars" id="star5" src="../img/star.png">
+        <p>블라블라블라블라블라블라</p>
+      </div>
     </div>
     <div class="ReviewGraph">
-      <img id="reviewGraph" src="../img/graph1.png">
+      <img id="reviewGraph" src="../img/graph1.jpg">
     </div>
     <div class="Slide">
       <img class="SlideButton" id="ReviewSlideButton1" src="../img/prev.png">

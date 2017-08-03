@@ -55,7 +55,6 @@ hr {
 
 .MainImage {
   position: relative;
-  /*margin-top: 55px;*/
 }
 
 
@@ -73,7 +72,6 @@ hr {
 #MainParagraph {
   display: block;
   margin: 0px;
-  margin-top: 50px;
   color: white;
   font-size: 58px;
   font-family: 'Pacifico';
@@ -81,37 +79,55 @@ hr {
   font-weight: bold;
   position: absolute;
   text-align: center;
-  top: 10%;
+  top: 20%;
 }
 
 #teacherRegister {
   position: absolute;
   display: block;
   width: 160px;
-  height: 40px;
-  left: 55%;
-  top: 75%;
+  height: 80px;
+  left: 52%;
+  top: 55%;
   border: 2px solid rgb(13, 19, 71);
-  border-radius: 3px;
-  color: rgb(13, 19, 71);
+  border-radius: 50px;
+  color: white;
   font-size: 20px;
+  font-weight: bold;
   padding: 0px;
-  background-color: white;
+  background-color: rgb(13, 19, 71);
 }
 
 #studentRegister {
   position: absolute;
   display: block;
   width: 160px;
-  height: 40px;
-  right: 55%;
-  top: 75%;
+  height: 80px;
+  right: 52%;
+  top: 55%;
   border: 2px solid rgb(13, 19, 71);
-  border-radius: 3px;
+  border-radius: 50px;
   color: rgb(13, 19, 71);
   font-size: 20px;
+  font-weight: bold;
   padding: 0px;
   background-color: white;
+}
+
+#teacherCount {
+  position: absolute;
+  display: block;
+  left: 55%;
+  top: 60%;
+  color: white;
+}
+
+#studentCount {
+  position: absolute;
+  display: block;
+  right: 55%;
+  top: 60%;
+  color: white;
 }
 
 .PromotionVideo {
@@ -223,6 +239,10 @@ h1 {
   margin-left: 10%;
 }
 
+.Review {
+  background-color: gray;
+}
+
 .ReviewSub {
   width: 100%;
 }
@@ -231,13 +251,30 @@ h1 {
   float: left;
   width: 40%;
   margin-left: 10%;
+    display: inline-block;
+}
+
+.ReviewProfileImage {
+  float: left;
+}
+
+#reviewProfileImage {
+  width: 180px;
+  height: 270px;
+}
+
+.ReviewProfileContent {
+  float: left;
 }
 
 .ReviewGraph {
   float: left;
   width: 40%;
   height: 200px;
-  margin-left: 10%;
+}
+
+#reviewGraph {
+  height: 270px;
 }
 
 .ReviewStars {

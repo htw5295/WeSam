@@ -20,11 +20,15 @@ $(window).resize(function() {
   var windowWidth = $(window).width();
   var check = 0;
 
-  if (windowWidth < 1150 && check == 0) {
-    document.getElementsByClassName('MainImageTable')[0].style.top = "6%";
+  if (windowWidth < 1200 && check == 0) {
+    document.getElementById('mainParagraphTitle').style.fontSize = "43px";
+    document.getElementById('mainParagraph').style.fontSize = "38px";
+    document.getElementsByClassName('MainImageTable')[0].style.top = "15%";
     check = 1;
   } else {
-    document.getElementsByClassName('MainImageTable')[0].style.top = "20%";
+    document.getElementById('mainParagraphTitle').style.fontSize = "58px";
+    document.getElementById('mainParagraph').style.fontSize = "58px";
+    document.getElementsByClassName('MainImageTable')[0].style.top = "10%";
     check = 0;
   }
 })

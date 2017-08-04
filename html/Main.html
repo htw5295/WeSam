@@ -13,38 +13,82 @@
 <body>
   <div class="MenuBar">
     <h1 id="title">WeSam</h1>
-    <button id="menuTeacherRegister">교사 등록</button>
-    <button id="menuStudentRegister">학생 등록</button>
-    <button id="login">로그인</button>
+    <button id="menuTeacherRegister">Teacher</button>
+    <button id="menuStudentRegister">Student</button>
+    <button id="login">Login</button>
   </div>
   <button onclick="topFunction()" id="top">Top</button>
   <div class="MainImage">
-    <img id="mainImage" src="../img/MainImage.jpg">
+    <img id="mainImage" src="../img/MainImage2.jpg">
     <table class="MainImageTable">
       <tr>
-        <td colspan="2">
-          <p id="MainParagraph">
-            <font color="#0d1347">WeSam</font><br>믿을 수 있는<br> 맞춤형 개인 과외 서비스<br>
+        <td>
+          <p id="mainParagraphTitle">
+            <font color="#6699ff" font-size="68px">WeSam</font><br>
           </p>
         </td>
       </tr>
       <tr>
-        <td>
-          <button id="studentRegister">학생 등록</button>
-        </td>
-        <td>
-          <button id="teacherRegister">교사 등록</button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <h1 id="studentCount">123,456명</h1>
-        </td>
-        <td>
-          <h1 id="teacherCount">654,321명</h1>
-        </td>
+        <td><p id="mainParagraph">믿을 수 있는<br> 맞춤형 개인 과외 서비스<br></td></p>
       </tr>
     </table>
+  </div>
+  <hr>
+  <div class="Review">
+    <div class="ReviewSlide">
+      <div class="ReviewProfile">
+        <div class="ReviewProfileImage">
+          <img id="reviewProfileImage" src="../img/profile.jpg">
+        </div>
+        <div class="ReviewProfileTitle">
+          <h2>OOO 학생 / 고3</h2>
+          <h3>OOO 선생님과 6개월</h3>
+          <img class="ReviewStars" id="star1" src="../img/star.png">
+          <img class="ReviewStars" id="star2" src="../img/star.png">
+          <img class="ReviewStars" id="star3" src="../img/star.png">
+          <img class="ReviewStars" id="star4" src="../img/star.png">
+          <img class="ReviewStars" id="star5" src="../img/star.png">
+        </div>
+        <div class="ReviewProfileContent">
+          <hr>
+          <p>안에 내용은 3줄로 고정</p>
+          <p>안에 내용은 3줄로 고정</p>
+          <p>안에 내용은 3줄로 고정</p>
+          <hr>
+        </div>
+        <div class="ReviewProfileGraph">
+          <img id="reviewProfileGraph" src="../img/graph1.jpg">
+        </div>
+      </div>
+      <div class="ReviewProfile">
+        <div class="ReviewProfileImage">
+          <img id="reviewProfileImage" src="../img/profile.jpg">
+        </div>
+        <div class="ReviewProfileTitle">
+          <h2>OOO 학생 / 고3</h2>
+          <h3>OOO 선생님과 6개월</h3>
+          <img class="ReviewStars" id="star1" src="../img/star.png">
+          <img class="ReviewStars" id="star2" src="../img/star.png">
+          <img class="ReviewStars" id="star3" src="../img/star.png">
+          <img class="ReviewStars" id="star4" src="../img/star.png">
+          <img class="ReviewStars" id="star5" src="../img/star.png">
+        </div>
+        <div class="ReviewProfileContent">
+          <hr>
+          <p>안에 내용은 3줄로 고정</p>
+          <p>안에 내용은 3줄로 고정</p>
+          <p>안에 내용은 3줄로 고정</p>
+          <hr>
+        </div>
+        <div class="ReviewProfileGraph">
+          <img id="reviewProfileGraph" src="../img/graph1.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="Slide">
+      <img class="SlideButton" id="ReviewSlideButton1" src="../img/prev.png">
+      <img class="SlideButton" id="ReviewSlideButton2" src="../img/next.png">
+    </div>
   </div>
   <hr>
   <div class="PromotionVideo">
@@ -55,14 +99,12 @@
   </div>
   <hr>
   <div class="What">
-    <h1 id="what">What is <span style="font-family: pacifico; color: rgb(13, 19, 71);">WeSam</span></h1>
+    <h1 id="what">What is <span style="font-family: pacifico; color: #6699ff;">WeSam</span></h1>
     <div class="IconDiv">
       <div class="Trust">
         <img id="trustImg" src="../img/trust.png">
         <h2>신뢰</h2>
-        <p>블라블라블라블라블라블라블라블라</p>
-        <p>블라블라블라블라블라블라블라블라</p>
-        <p>블라블라블라블라블라블라블라블라</p>
+        <p>까다로운 절차를 통해 믿을 수 있는 검증된 선생님만을 모집<br>학력 검증 및 수업 커리큘럼, 수업방식, 시간 등을 포함하는 지원서 작성<br>전화인터뷰 및 면접 인터뷰 진행 후 선발 </p>
       </div>
       <div class="Match">
         <img id="matchImg" src="../img/match.png">
@@ -82,7 +124,7 @@
   </div>
   <hr>
   <div class="Why">
-    <h1 id="why">Why is <span style="font-family: pacifico; color: rgb(13, 19, 71);">WeSam?</span></h1>
+    <h1 id="why">Why is <span style="font-family: pacifico; color: #6699ff;">WeSam?</span></h1>
     <div class="IconDiv">
       <div class="Student">
         <img id="studentImg" src="../img/student.png">
@@ -121,30 +163,6 @@
       </div>
     </div>
     <div class="ClearDiv">
-    </div>
-  </div>
-  <hr>
-  <div class="Review">
-    <div class="ReviewProfile">
-      <div class="ReviewProfileImage">
-        <img id="reviewProfileImage" src="../img/student1.png">
-      </div>
-      <div class="ReviewProfileContent">
-        <h2>박보영 학생 / 고3</h2>
-        <img class="ReviewStars" id="star1" src="../img/star.png">
-        <img class="ReviewStars" id="star2" src="../img/star.png">
-        <img class="ReviewStars" id="star3" src="../img/star.png">
-        <img class="ReviewStars" id="star4" src="../img/star.png">
-        <img class="ReviewStars" id="star5" src="../img/star.png">
-        <p>블라블라블라블라블라블라</p>
-      </div>
-    </div>
-    <div class="ReviewGraph">
-      <img id="reviewGraph" src="../img/graph1.jpg">
-    </div>
-    <div class="Slide">
-      <img class="SlideButton" id="ReviewSlideButton1" src="../img/prev.png">
-      <img class="SlideButton" id="ReviewSlideButton2" src="../img/next.png">
     </div>
   </div>
   <hr>

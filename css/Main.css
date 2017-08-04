@@ -38,6 +38,12 @@ hr {
   color: #6699ff;
 }
 
+#subtitle {
+  font-size: 16px;
+  font-family: 굴림체;
+  color: white;
+}
+
 #login {
   width: 80px;
   height: 30px;

@@ -15,10 +15,10 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+var check = 0;
 //창 크기 변화 감지
 $(window).resize(function() {
   var windowWidth = $(window).width();
-  var check = 0;
   var width = -($(".MainImageTable").width() / 2);
   document.getElementsByClassName('MainImageTable')[0].style.marginLeft = width+"px";
 

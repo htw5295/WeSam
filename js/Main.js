@@ -19,16 +19,20 @@ function topFunction() {
 $(window).resize(function() {
   var windowWidth = $(window).width();
   var check = 0;
+  var width = -($(".MainImageTable").width() / 2);
+  document.getElementsByClassName('MainImageTable')[0].style.marginLeft = width+"px";
 
-  if (windowWidth < 1200 && check == 0) {
+  if (windowWidth < 1250 && check == 0) {
     document.getElementById('mainParagraphTitle').style.fontSize = "43px";
     document.getElementById('mainParagraph').style.fontSize = "38px";
     document.getElementsByClassName('MainImageTable')[0].style.top = "15%";
+    document.getElementById('reviewProfile2').style.display = "none";
     check = 1;
   } else {
     document.getElementById('mainParagraphTitle').style.fontSize = "58px";
     document.getElementById('mainParagraph').style.fontSize = "58px";
     document.getElementsByClassName('MainImageTable')[0].style.top = "10%";
+    document.getElementById('reviewProfile2').style.display = "table-cell";
     check = 0;
   }
 })

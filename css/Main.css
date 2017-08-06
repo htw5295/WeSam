@@ -4,15 +4,19 @@ html {
 }
 
 body {
-  min-width: 900px;
   margin: 0px;
   padding: 0px;
+  min-width: 900px;
 }
 
 hr {
   margin-top: 30px;
   margin-bottom: 30px;
   border: 1px solid gray;
+}
+
+h1 {
+  text-align: center;
 }
 
 .MenuBar {
@@ -40,7 +44,7 @@ hr {
 
 #subtitle {
   font-size: 16px;
-  font-family: 굴림체;
+  font-family: 나눔고딕;
   color: white;
 }
 
@@ -151,73 +155,28 @@ hr {
   display: block;
 }
 
-#teacherRegister {
-  width: 160px;
-  height: 80px;
-  border: 3px solid #6699ff;
-  border-radius: 50px;
-  color: #6699ff;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0px;
-  background-color: white;
-}
-
-#teacherRegister:hover {
-  background-color: gray;
-}
-
-#studentRegister {
-  width: 160px;
-  height: 80px;
-  border: 3px solid #6699ff;
-  border-radius: 50px;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0px;
-  background-color: #6699ff;
-}
-
-#studentRegister:hover {
-  color: gray;
-}
-
-#teacherCount {
-  display: block;
-  color: white;
-}
-
-#studentCount {
-  display: block;
-  color: white;
-}
-
 .PromotionVideo {
   text-align: center;
 }
 
-h1 {
-  text-align: center;
+.What h2, .Why h2 {
+  color: #6699ff;
 }
 
-.What {
-  text-align: center;
+.WhatTable {
+  margin: auto;
+  border-spacing: 50px 0px;;
 }
 
-.IconDiv p {
+.WhatTable p {
   margin-bottom: 0px;
+  font-weight: bold;
 }
 
 .Trust {
-  width: 20%;
   height: 400px;
   text-align: center;
   display: inline-block;
-  border: 3px solid #6699ff;
-  border-radius: 20px;
-  margin-right: 10%;
-  padding-top: 20px;
 }
 
 #trustImg {
@@ -226,13 +185,9 @@ h1 {
 }
 
 .Match {
-  width: 20%;
   height: 400px;
   text-align: center;
   display: inline-block;
-  border: 3px solid #6699ff;
-  border-radius: 20px;
-  padding-top: 20px;
 }
 
 #matchImg {
@@ -241,14 +196,9 @@ h1 {
 }
 
 .Manage {
-  width: 20%;
   height: 400px;
   text-align: center;
   display: inline-block;
-  border: 3px solid #6699ff;
-  border-radius: 20px;
-  margin-left: 10%;
-  padding-top: 20px;
 }
 
 #manageImg {
@@ -256,19 +206,19 @@ h1 {
   height: 150px;
 }
 
-.Why {
+.WhyTable {
+  margin: auto;
+  border-spacing: 100px 0px;;
+}
 
+.WhyTable p {
+  font-weight: bold;
 }
 
 .Student {
-  width: 30%;
   height: 400px;
   text-align: center;
   display: inline-block;
-  border: 3px solid #6699ff;
-  border-radius: 20px;
-  margin-left: 15%;
-  padding-top: 20px;
 }
 
 #studentImg {
@@ -277,15 +227,9 @@ h1 {
 }
 
 .Teacher {
-  width: 30%;
   height: 400px;
   text-align: center;
   display: inline-block;
-  border: 3px solid #6699ff;
-  border-radius: 20px;
-  margin-right: 15%;
-  float: right;
-  padding-top: 20px;
 }
 
 #teacherImg {
@@ -316,9 +260,9 @@ h1 {
   width: 100%;
 }
 
-.ReviewSlide {
-  width: 100%;
-  height: 575px;
+.ReviewTable {
+  margin: auto;
+  border-spacing: 100px 0px;
 }
 
 .ReviewProfile hr {
@@ -332,7 +276,6 @@ h1 {
   border-radius: 20px;
   float: left;
   width: 460px;
-  margin-left: 10%;
   display: inline-block;
 }
 
@@ -404,15 +347,16 @@ h1 {
   height: 80px;
   border: 5px solid #6699ff;
   border-radius: 50px;
-  color: white;
+  color: #6699ff;
   font-size: 20px;
   font-weight: bold;
   padding: 0px;
-  background-color: #6699ff;
+  background-color: white;
 }
 
 #endStudentRegister:hover {
-  color: gray;
+  color: white;
+  background-color: #6699ff;
 }
 
 #endTeacherRegister {
@@ -428,7 +372,8 @@ h1 {
 }
 
 #endTeacherRegister:hover {
-  background-color: gray;
+  color: white;
+  background-color: #6699ff;
 }
 
 .End {
@@ -450,6 +395,38 @@ h1 {
   border-radius: 10px;
 }
 
-#top:hover {
-  background-color: #555;
+#kakaotalk {
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #6699ff;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#kakaotalk:hover {
+
+}
+
+#chatBot {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #6699ff;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#chatBot:hover {
+
 }

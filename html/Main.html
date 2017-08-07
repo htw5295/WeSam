@@ -6,16 +6,29 @@
   <title>위샘 - WeSam</title>
   <link rel="stylesheet" type="text/css" href="../css/Main.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="../js/Main.js"></script>
 </head>
 
 <body>
   <div class="MenuBar">
+    <div class="Container" onclick="menuBar(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <div class="MobileButton">
+        <button class="MenuButton" id="mobileMenuTeacher">Teacher</button>
+        <button class="MenuButton" id="mobileMenuStudent">Student</button>
+        <button class="MenuButton" id="mobileRegister">Register</button>
+      </div>
+    </div>
     <h1 id="title">WeSam<span id="subtitle"> - 연결을 넘어 관리까지</span></h1>
-    <button id="menuTeacherRegister">Teacher</button>
-    <button id="menuStudentRegister">Student</button>
-    <button id="login">Login</button>
+    <div class="DesktopButton">
+      <button class="MenuButton" id="desktopMenuTeacher">Teacher</button>
+      <button class="MenuButton" id="desktopMenuStudent">Student</button>
+      <button class="MenuButton" id="desktopRegister">Register</button>
+    </div>
   </div>
   <div class="Side">
     <button id="kakaotalk">카카오톡</button>

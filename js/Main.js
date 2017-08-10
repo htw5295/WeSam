@@ -1,41 +1,61 @@
+//google analystics
+(function(i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  i[r] = i[r] || function() {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-104411540-1', 'auto');
+ga('send', 'pageview');
+
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  scrollFunction()
+};
 
 function menuBar(x) {
   x.classList.toggle("change");
 }
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("top").style.display = "block";
-    } else {
-        document.getElementById("top").style.display = "none";
-    }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("top").style.display = "block";
+  } else {
+    document.getElementById("top").style.display = "none";
+  }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
-//창 크기 변화 감지
-$(window).resize(function() {
-  var windowWidth = $(window).width();
-  var width = -($(".MainImageTable").width() / 2);
-  document.getElementsByClassName('MainImageTable')[0].style.marginLeft = width+"px";
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+  scrollFunction()
+};
 
-  if (windowWidth < 1250) {
-    document.getElementById('mainParagraphTitle').style.fontSize = "43px";
-    document.getElementById('mainParagraph').style.fontSize = "38px";
-    document.getElementsByClassName('MainImageTable')[0].style.top = "15%";
-    document.getElementById('reviewProfile2').style.display = "none";
-    check = 1;
+function menuBar(x) {
+  x.classList.toggle("change");
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("top").style.display = "block";
   } else {
-    document.getElementById('mainParagraphTitle').style.fontSize = "58px";
-    document.getElementById('mainParagraph').style.fontSize = "58px";
-    document.getElementsByClassName('MainImageTable')[0].style.top = "10%";
-    document.getElementById('reviewProfile2').style.display = "table-cell";
-    check = 0;
+    document.getElementById("top").style.display = "none";
   }
-})
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

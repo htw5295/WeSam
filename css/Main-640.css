@@ -1,0 +1,134 @@
+#title {
+  width: auto;
+  position: absolute;
+  left: 50%;
+  margin: 2px 0px 0px -56px;
+  padding: 0px;
+  font-family: 'Pacifico';
+  color: #6699ff;
+}
+
+#subtitle {
+  display: none;
+  font-size: 16px;
+  font-family: 나눔고딕;
+  color: white;
+}
+
+.Container {
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  margin-top: 7px;
+  margin-left: 16px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #6699ff;
+  margin: 7px 0;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-10px, -9px);
+}
+
+.change .MobileButton {
+  -webkit-display: none;
+  display: block;
+}
+
+.DesktopButton {
+  display: none;
+}
+
+.MenuButton {
+  width: 80px;
+  height: 30px;
+  margin-top: 13px;
+  margin-right: 16px;
+  border: 2px solid #6699ff;
+  border-radius: 30px;
+  color: white;
+  font-size: 15px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: 'Pacifico';
+}
+
+.MenuButton:hover {
+  color: #6699ff;
+}
+
+.MobileButton {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  width: 100px;
+  margin-top: 12px;
+  margin-left: -16px;
+  padding-left: 16px;
+}
+
+.DesktopButton {
+  display: none;
+}
+
+.MainImage {
+  position: relative;
+  overflow: hidden;
+}
+
+.MainImageTable {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -209px;
+  text-align: center;
+}
+
+/* 이미지를 자동으로 화면에 맞게 리사이즈 되도록 */
+
+#mainImage {
+  content: url('../img/MainImage1.jpg');
+  max-width: 150%;
+  /* 이미지의 최대사이즈 */
+  width: auto;
+  /* IE8 */
+  height: auto;
+  vertical-align: bottom;
+}
+
+#mainParagraphTitle {
+  display: block;
+  margin: 0px;
+  color: white;
+  font-size: 43px;
+  font-family: 'Pacifico';
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+#mainParagraph {
+  line-height: 120%;
+  display: block;
+  margin: 0px;
+  color: white;
+  font-size: 38px;
+  font-family: 'Pacifico';
+  width: 100%;
+  text-align: center;
+}

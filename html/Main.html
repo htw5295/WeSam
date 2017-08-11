@@ -26,12 +26,14 @@
     ga('create', 'UA-104411540-1', 'auto');
     ga('send', 'pageview');
 
-    function handleOutboundLinkClicks(event) {
-      ga('send', 'event', {
-        eventCategory: 'call',
-        eventAction: 'click',
-      });
-    }
+    // Attach click listener to relevant buttons.
+jQuery('#call').click(function() {
+  // Since we have multiple CTA buttons, it is sensible to use
+  // button text to categorize the events.
+  var buttonText = jQuery(this).text();
+  // This function reports an event to Google Analytics servers.
+  ga('send', 'event', 'CTA click', 'click', buttonText);
+});
   </script>
 </head>
 
@@ -55,7 +57,7 @@
     </div>
   </div>
   <div class="Side">
-    <button id="call" onclick="handleOutboundLinkClicks(this)">전화하기</button>
+    <button id="call">전화하기</button>
     <button id="kakaotalk">카카오톡</button>
     <button id="chatBot">문의하기</button>
   </div>

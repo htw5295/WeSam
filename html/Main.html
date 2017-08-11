@@ -25,15 +25,6 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-104411540-1', 'auto');
     ga('send', 'pageview');
-
-    // Attach click listener to relevant buttons.
-jQuery('#call').click(function() {
-  // Since we have multiple CTA buttons, it is sensible to use
-  // button text to categorize the events.
-  var buttonText = jQuery(this).text();
-  // This function reports an event to Google Analytics servers.
-  ga('send', 'event', 'CTA click', 'click', buttonText);
-});
   </script>
 </head>
 
@@ -57,7 +48,7 @@ jQuery('#call').click(function() {
     </div>
   </div>
   <div class="Side">
-    <button id="call">전화하기</button>
+    <a href="#" id="call" onClick="ga(‘send’, ‘event’, ‘ PDF Downloads’, ‘Click’, ‘SEO For Beginners’);">전화하기</a>
     <button id="kakaotalk">카카오톡</button>
     <button id="chatBot">문의하기</button>
   </div>

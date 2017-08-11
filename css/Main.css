@@ -208,6 +208,10 @@ h1 {
   height: 150px;
 }
 
+.TeacherPromotion {
+  display: none;
+}
+
 .TeacherPromotionVideo {
   width: 40%;
   margin-left: 10%;
@@ -228,12 +232,18 @@ h1 {
   width: 100%;
 }
 
+.Review h2, h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
 .ReviewTable {
   margin: auto;
 }
 
-#reviewProfile1 {
-  padding-right: 10%;
+.ReviewTable td {
+  width: 320px;
 }
 
 .ReviewProfile hr {
@@ -246,7 +256,7 @@ h1 {
   border: 3px solid #6699ff;
   border-radius: 20px;
   float: left;
-  width: 460px;
+  width: 320px;
   display: inline-block;
 }
 
@@ -255,22 +265,24 @@ h1 {
 }
 
 #reviewProfileImage {
-  width: 180px;
-  height: 180px;
+  width: 100px;
+  height: 100px;
+  margin-left: 5px;
+  margin-top: 5px;
   border-radius: 20px;
 }
 
 .ReviewProfileTitle {
   margin-left: 10px;
-  width: 270px;
-  height: 180px;
+  width: 200px;
+  height: 100px;
   float: left;
 }
 
 .ReviewProfileContent {
   display: inline-block;
   margin-left: 10px;
-  width: 440px;
+  width: 300px;
 }
 
 .ReviewGraph {
@@ -283,14 +295,14 @@ h1 {
 }
 
 #reviewProfileGraph {
-  width: 460px;
+  width: 320px;
   height: 230px;
   border-radius: 20px;
 }
 
 .ReviewStars {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 .Slide {
@@ -366,6 +378,24 @@ h1 {
   border-radius: 10px;
 }
 
+#call {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #6699ff;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#call:hover {
+
+}
+
 #kakaotalk {
   position: fixed;
   bottom: 100px;
@@ -378,6 +408,7 @@ h1 {
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
+  display: none;
 }
 
 #kakaotalk:hover {}
@@ -394,6 +425,7 @@ h1 {
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
+  display: none;
 }
 
 #chatBot:hover {}

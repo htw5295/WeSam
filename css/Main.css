@@ -380,7 +380,7 @@ h1 {
 
 #call {
   position: fixed;
-  bottom: 50px;
+  bottom: 150px;
   left: 20px;
   z-index: 99;
   border: none;
@@ -408,7 +408,6 @@ h1 {
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
-  display: none;
 }
 
 #kakaotalk:hover {}
@@ -425,7 +424,6 @@ h1 {
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
-  display: none;
 }
 
 #chatBot:hover {}

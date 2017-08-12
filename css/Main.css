@@ -303,6 +303,7 @@ Table td {
 .SlideButton {
   width: 100px;
   height: 100px;
+  cursor: pointer;
 }
 
 .End {
@@ -352,7 +353,31 @@ Table td {
   border-radius: 10px;
 }
 
+.SideButton {
+  text-decoration: none;
+}
+
 #call {
+  position: fixed;
+  bottom: 120px;
+  left: 20px;
+  z-index: 99;
+  border: 3px solid #6699ff;
+  border-radius: 30px;
+  color: #6699ff;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px
+}
+
+#call:hover {
+  color: white;
+  background-color: #6699ff;
+  cursor: pointer;
+}
+
+#sms {
   position: fixed;
   bottom: 50px;
   left: 20px;
@@ -366,7 +391,7 @@ Table td {
   padding: 10px
 }
 
-#call:hover {
+#sms:hover {
   color: white;
   background-color: #6699ff;
   cursor: pointer;

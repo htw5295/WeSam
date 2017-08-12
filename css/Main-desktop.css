@@ -1,7 +1,7 @@
-.DesktopTd {
+.Desktop {
   display: table-cell;
 }
 
-.MobileTr {
+.Mobile {
   display: none;
 }

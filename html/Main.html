@@ -49,7 +49,8 @@
     </div>
   </div>
   <div class="Side">
-    <button id="call" onClick="ga('send', 'event', 'mobile', 'click to call', '888-259-4979');">전화하기</button>
+    <a href="tel:010-3427-7172" class="SideButton" id="call" onClick="ga('send', 'event', 'tel', 'click to call');">전화하기</a>
+    <a href="sms:010-3427-7172" class="SideButton" id="sms" onClick="ga('send', 'event', 'sms', 'click to sms');">문자전송</a>
   </div>
   <button onclick="topFunction()" id="top">Top</button>
   <div class="MainImage">
@@ -74,7 +75,7 @@
     <h1 id="review">Review</h1>
     <table class="ReviewTable">
       <tr>
-        <td class="ReviewTableArrowTd">
+        <td class="ReviewTableArrowTd Desktop">
           <img class="SlideButton" id="ReviewSlideButton1" src="../img/prev.png">
         </td>
         <td class="ReviewTableTd" id="reviewProfile1">
@@ -154,6 +155,16 @@
             </div>
           </div>
         </td>
+        <td class="ReviewTableArrowTd Desktop">
+          <img class="SlideButton" id="ReviewSlideButton2" src="../img/next.png">
+        </td>
+      </tr>
+    </table>
+    <table class="Mobile ReviewSlide">
+      <tr>
+        <td class="ReviewTableArrowTd">
+          <img class="SlideButton" id="ReviewSlideButton1" src="../img/prev.png">
+        </td>
         <td class="ReviewTableArrowTd">
           <img class="SlideButton" id="ReviewSlideButton2" src="../img/next.png">
         </td>
@@ -179,14 +190,14 @@
               <p>직접 만든 지원서로<br>까다로운 검증 절차를 거치고<br>면접 및 전화 인터뷰까지 진행합니다.</p>
             </div>
           </td>
-          <td class="DesktopTd">
+          <td class="Desktop">
             <div class="Match">
               <img id="matchImg" src="../img/match.png">
               <h2>매칭</h2>
               <p>단순한 매칭이 아닌<br>학생의 성향, 선생님의 성향까지 분석하는<br>매칭 서비스입니다.</p>
             </div>
           </td>
-          <td class="DesktopTd">
+          <td class="Desktop">
             <div class="Manage">
               <img id="manageImg" src="../img/manage.png">
               <h2>관리</h2>
@@ -194,7 +205,7 @@
             </div>
           </td>
         </tr>
-        <tr class="MobileTr">
+        <tr class="Mobile">
           <td>
             <div class="Match">
               <img id="matchImg" src="../img/match.png">
@@ -203,7 +214,7 @@
             </div>
           </td>
         </tr>
-        <tr class="MobileTr">
+        <tr class="Mobile">
           <td>
             <div class="Manage">
               <img id="manageImg" src="../img/manage.png">
@@ -226,7 +237,7 @@
               <p>매칭에서 끝나는 것이 아닌<br>지속적인 관리로 효과적인<br>성적 향상을 이끌어냅니다.</p>
             </div>
           </td>
-          <td class="DesktopTd">
+          <td class="Desktop">
             <div class="Teacher">
               <img id="teacherImg" src="../img/teacher.png">
               <h2>나눔지기 선생님</h2>
@@ -234,7 +245,7 @@
             </div>
           </td>
         </tr>
-        <tr class="MobileTr">
+        <tr class="Mobile">
           <td>
             <div class="Teacher">
               <img id="teacherImg" src="../img/teacher.png">

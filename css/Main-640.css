@@ -133,11 +133,22 @@ Table {
   text-align: center;
 }
 
-.ReviewTableArrowTd, #reviewProfile2, #reviewProfile3 {
+#reviewProfile2, #reviewProfile3 {
   display: none;
 }
 
-.DesktopTd {
+.ReviewSlide td {
+  width: 160px;
+  padding: 0px;
+  text-align: center;
+}
+
+.SlideButton {
+  width: 50px;
+  height: 50px;
+}
+
+.Desktop {
   display: none;
 }
 
@@ -189,6 +200,20 @@ Table {
 }
 
 #call {
+  position: fixed;
+  bottom: 90px;
+  left: 15px;
+  z-index: 99;
+  border: 2px solid #6699ff;
+  border-radius: 30px;
+  color: #6699ff;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px
+}
+
+#sms {
   position: fixed;
   bottom: 30px;
   left: 15px;

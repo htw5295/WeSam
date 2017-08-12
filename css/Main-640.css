@@ -1,3 +1,7 @@
+Table {
+  border-spacing: 0px;
+}
+
 #title {
   width: auto;
   position: absolute;
@@ -82,10 +86,6 @@
   padding-left: 16px;
 }
 
-.DesktopButton {
-  display: none;
-}
-
 .MainImage {
   position: relative;
   overflow: hidden;
@@ -95,7 +95,7 @@
   position: absolute;
   top: 20%;
   left: 50%;
-  margin-left: -209px;
+  margin-left: -152px;
   text-align: center;
 }
 
@@ -127,8 +127,77 @@
   display: block;
   margin: 0px;
   color: white;
-  font-size: 38px;
+  font-size: 28px;
   font-family: 'Pacifico';
   width: 100%;
   text-align: center;
+}
+
+.ReviewTableArrowTd, #reviewProfile2, #reviewProfile3 {
+  display: none;
+}
+
+.DesktopTd {
+  display: none;
+}
+
+.MoblieTr {
+  display: table-row;
+}
+
+.WhatTable td, .WhyTable td {
+  height: auto;
+}
+
+.WhatTable {
+  border-spacing: 0px 0px;
+}
+
+.WhyTable {
+  border-spacing: 0px 0px;
+}
+
+.Match h2 {
+  margin-top: 0px;
+}
+
+.ReviewTableTd {
+  padding: 0px;
+}
+
+.EndButton {
+  width: 120px;
+  height: 60px;
+  border: 3px solid #6699ff;
+  border-radius: 50px;
+  color: #6699ff;
+  font-size: 15px;
+}
+
+#trustImg {
+  padding-top: 0px;
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  font-size: 15px;
+  padding: 10px;
+}
+
+#call {
+  position: fixed;
+  bottom: 30px;
+  left: 15px;
+  z-index: 99;
+  border: 2px solid #6699ff;
+  border-radius: 30px;
+  color: #6699ff;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px
 }

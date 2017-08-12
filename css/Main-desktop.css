@@ -1,0 +1,7 @@
+.DesktopTd {
+  display: table-cell;
+}
+
+.MobileTr {
+  display: none;
+}

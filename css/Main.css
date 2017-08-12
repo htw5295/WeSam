@@ -18,6 +18,10 @@ h1 {
   text-align: center;
 }
 
+Table td {
+  text-align: center;
+}
+
 .MenuButton {
   width: 80px;
   height: 30px;
@@ -34,6 +38,7 @@ h1 {
 
 .MenuButton:hover {
   color: #6699ff;
+  cursor: pointer;
 }
 
 .MainImage {
@@ -45,7 +50,7 @@ h1 {
   position: absolute;
   top: 15%;
   left: 50%;
-  margin-left: -316px;
+  margin-left: -297px;
   text-align: center;
 }
 
@@ -63,7 +68,7 @@ h1 {
   display: block;
   margin: 0px;
   color: white;
-  font-size: 58px;
+  font-size: 55px;
   font-family: 'Pacifico';
   width: 100%;
   font-weight: bold;
@@ -75,7 +80,7 @@ h1 {
   display: block;
   margin: 0px;
   color: white;
-  font-size: 58px;
+  font-size: 55px;
   font-family: 'Pacifico';
   width: 100%;
   text-align: center;
@@ -116,7 +121,6 @@ h1 {
 }
 
 .DesktopButton {
-  display: inline-block;
   float: right;
 }
 
@@ -135,7 +139,6 @@ h1 {
 .WhatTable {
   margin: auto;
   border-spacing: 50px 0px;
-  ;
 }
 
 .WhatTable p {
@@ -143,19 +146,22 @@ h1 {
   font-weight: bold;
 }
 
-.Trust {
+.WhatTable td, .WhyTable td {
   height: 400px;
+}
+
+.Trust {
   text-align: center;
   display: inline-block;
 }
 
 #trustImg {
   width: 150px;
-  height: 150px;
+  height: 75px;
+  padding-top: 75px;
 }
 
 .Match {
-  height: 400px;
   text-align: center;
   display: inline-block;
 }
@@ -166,7 +172,6 @@ h1 {
 }
 
 .Manage {
-  height: 400px;
   text-align: center;
   display: inline-block;
 }
@@ -179,7 +184,6 @@ h1 {
 .WhyTable {
   margin: auto;
   border-spacing: 100px 0px;
-  ;
 }
 
 .WhyTable p {
@@ -187,7 +191,6 @@ h1 {
 }
 
 .Student {
-  height: 400px;
   text-align: center;
   display: inline-block;
 }
@@ -198,7 +201,6 @@ h1 {
 }
 
 .Teacher {
-  height: 400px;
   text-align: center;
   display: inline-block;
 }
@@ -242,10 +244,6 @@ h1 {
   margin: auto;
 }
 
-.ReviewTable td {
-  width: 320px;
-}
-
 .ReviewProfile hr {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -256,7 +254,7 @@ h1 {
   border: 3px solid #6699ff;
   border-radius: 20px;
   float: left;
-  width: 320px;
+  width: 314px;
   display: inline-block;
 }
 
@@ -265,8 +263,8 @@ h1 {
 }
 
 #reviewProfileImage {
-  width: 100px;
-  height: 100px;
+  width: 94px;
+  height: 94px;
   margin-left: 5px;
   margin-top: 5px;
   border-radius: 20px;
@@ -281,21 +279,12 @@ h1 {
 
 .ReviewProfileContent {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 7px;
   width: 300px;
 }
 
-.ReviewGraph {
-  float: left;
-  width: 35%;
-  margin-left: 10%;
-  border: 3px solid #6699ff;
-  border-radius: 20px;
-  text-align: center;
-}
-
 #reviewProfileGraph {
-  width: 320px;
+  width: 314px;
   height: 230px;
   border-radius: 20px;
 }
@@ -325,7 +314,7 @@ h1 {
   color: #6699ff;
 }
 
-#endStudentRegister {
+.EndButton {
   width: 160px;
   height: 80px;
   border: 5px solid #6699ff;
@@ -337,26 +326,10 @@ h1 {
   background-color: white;
 }
 
-#endStudentRegister:hover {
+.EndButton:hover {
   color: white;
   background-color: #6699ff;
-}
-
-#endTeacherRegister {
-  width: 160px;
-  height: 80px;
-  border: 5px solid #6699ff;
-  border-radius: 50px;
-  color: #6699ff;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0px;
-  background-color: white;
-}
-
-#endTeacherRegister:hover {
-  color: white;
-  background-color: #6699ff;
+  cursor: pointer;
 }
 
 .End {
@@ -371,59 +344,30 @@ h1 {
   z-index: 99;
   border: none;
   outline: none;
+  font-size: 20px;
   background-color: #6699ff;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
 }
 
 #call {
   position: fixed;
-  bottom: 150px;
-  left: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #6699ff;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-#call:hover {
-
-}
-
-#kakaotalk {
-  position: fixed;
-  bottom: 100px;
-  left: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #6699ff;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-#kakaotalk:hover {}
-
-#chatBot {
-  position: fixed;
   bottom: 50px;
   left: 20px;
   z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #6699ff;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
+  border: 3px solid #6699ff;
+  border-radius: 30px;
+  color: #6699ff;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px
 }
 
-#chatBot:hover {}
+#call:hover {
+  color: white;
+  background-color: #6699ff;
+  cursor: pointer;
+}

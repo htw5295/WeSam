@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
   <title>위샘 - WeSam</title>
-  <link rel="stylesheet" type="text/css" media="all and (max-width: 640px)" href="../css/Main-640.css">
-  <link rel="stylesheet" type="text/css" media="all and (max-width: 1024px)" href="../css/Main-1024.css">
   <link rel="stylesheet" type="text/css" href="../css/Main.css">
+  <link rel="stylesheet" type="text/css" media="all and (max-width: 1024px)" href="../css/Main-1024.css">
+  <link rel="stylesheet" type="text/css" media="all and (max-width: 640px)" href="../css/Main-640.css">
+  <link rel="stylesheet" type="text/css" media="all and (min-width: 1025px)" href="../css/Main-desktop.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="../js/Main.js"></script>
@@ -48,9 +49,7 @@
     </div>
   </div>
   <div class="Side">
-    <a href="#" id="call" onClick="ga('send', 'event', 'mobile', 'click to call', '888-259-4979');">전화하기</a>
-    <a href="#" id="kakaotalk" onClick="ga('send', 'event', 'mobile', 'click to call', '888-259-4979');">전화하기</a>>
-    <a href="#" id="chatBot" onClick="ga('send', 'event', 'mobile', 'click to call', '888-259-4979');">전화하기</a>
+    <button id="call" onClick="ga('send', 'event', 'mobile', 'click to call', '888-259-4979');">전화하기</button>
   </div>
   <button onclick="topFunction()" id="top">Top</button>
   <div class="MainImage">
@@ -72,12 +71,13 @@
   </div>
   <hr>
   <div class="Review">
+    <h1 id="review">Review</h1>
     <table class="ReviewTable">
       <tr>
-        <td>
+        <td class="ReviewTableArrowTd">
           <img class="SlideButton" id="ReviewSlideButton1" src="../img/prev.png">
         </td>
-        <td id="reviewProfile1">
+        <td class="ReviewTableTd" id="reviewProfile1">
           <div class="ReviewProfile">
             <div class="ReviewProfileImage">
               <img id="reviewProfileImage" src="../img/profile.jpg">
@@ -103,7 +103,7 @@
             </div>
           </div>
         </td>
-        <td id="reviewProfile2">
+        <td class="ReviewTableTd" id="reviewProfile2">
           <div class="ReviewProfile">
             <div class="ReviewProfileImage">
               <img id="reviewProfileImage" src="../img/profile.jpg">
@@ -128,7 +128,7 @@
               <img id="reviewProfileGraph" src="../img/graph1.jpg">
             </div>
         </td>
-        <td id="reviewProfile3">
+        <td class="ReviewTableTd" id="reviewProfile3">
           <div class="ReviewProfile">
             <div class="ReviewProfileImage">
               <img id="reviewProfileImage" src="../img/profile.jpg">
@@ -154,7 +154,7 @@
             </div>
           </div>
         </td>
-        <td>
+        <td class="ReviewTableArrowTd">
           <img class="SlideButton" id="ReviewSlideButton2" src="../img/next.png">
         </td>
       </tr>
@@ -176,9 +176,25 @@
             <div class="Trust">
               <img id="trustImg" src="../img/trust.png">
               <h2>신뢰</h2>
-              <p>직접 만든 지원서로<br>까다로운 검증 절차를 거칩니다.<br>지원서 작성 후<br>면접 및 전화 인터뷰까지 진행합니다.</p>
+              <p>직접 만든 지원서로<br>까다로운 검증 절차를 거치고<br>면접 및 전화 인터뷰까지 진행합니다.</p>
             </div>
           </td>
+          <td class="DesktopTd">
+            <div class="Match">
+              <img id="matchImg" src="../img/match.png">
+              <h2>매칭</h2>
+              <p>단순한 매칭이 아닌<br>학생의 성향, 선생님의 성향까지 분석하는<br>매칭 서비스입니다.</p>
+            </div>
+          </td>
+          <td class="DesktopTd">
+            <div class="Manage">
+              <img id="manageImg" src="../img/manage.png">
+              <h2>관리</h2>
+              <p>매칭 이후에도 지속적인 관리 시스템과<br>학생에게 필요한 정보를 제공합니다.</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="MobileTr">
           <td>
             <div class="Match">
               <img id="matchImg" src="../img/match.png">
@@ -186,6 +202,8 @@
               <p>단순한 매칭이 아닌<br>학생의 성향, 선생님의 성향까지 분석하는<br>매칭 서비스입니다.</p>
             </div>
           </td>
+        </tr>
+        <tr class="MobileTr">
           <td>
             <div class="Manage">
               <img id="manageImg" src="../img/manage.png">
@@ -208,6 +226,15 @@
               <p>매칭에서 끝나는 것이 아닌<br>지속적인 관리로 효과적인<br>성적 향상을 이끌어냅니다.</p>
             </div>
           </td>
+          <td class="DesktopTd">
+            <div class="Teacher">
+              <img id="teacherImg" src="../img/teacher.png">
+              <h2>나눔지기 선생님</h2>
+              <p>시작부터 끝까지 위쌤이<br>책임지고 관리해드립니다.</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="MobileTr">
           <td>
             <div class="Teacher">
               <img id="teacherImg" src="../img/teacher.png">
@@ -246,10 +273,10 @@
       </div>
       <div class="EndCenter">
         <h1 id="endTitle">WeSam</h1>
-        <h2>개인 과외 맞춤 서비스</h2>
+        <h2>맞춤형 개인 과외 서비스</h2>
         <center>
-          <button id="endStudentRegister">학생 등록하기</button>
-          <button id="endTeacherRegister">교사 등록하기</button>
+          <button class="EndButton" id="endStudentRegister">학생 등록하기</button>
+          <button class="EndButton" id="endTeacherRegister">교사 등록하기</button>
         </center>
       </div>
       <div class="EndRight">

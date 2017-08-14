@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" media="all and (min-width: 1025px)" href="../css/Main-desktop.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
   <script type="text/javascript" src="../js/Main.js"></script>
   <script type="text/javascript">
     (function(i, s, o, g, r, a, m) {
@@ -26,6 +27,102 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-104411540-1', 'auto');
     ga('send', 'pageview');
+
+    function displayLineChart1() {
+      var data = {
+        labels: ["2016/9", "2016/11", "2017/3"],
+        datasets: [{
+            label: "Prime and Fibonacci",
+            fillColor: "rgba(102,153,255,0.2)",
+            strokeColor: "#6699ff",
+            pointColor: "#6699ff",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "#6699ff",
+            data: [71, 73, 84]
+          }
+        ]
+      };
+      var ctx = document.getElementById("lineChart1").getContext("2d");
+      var options = {};
+      var lineChart = new Chart(ctx).Line(data, options);
+    }
+    function displayLineChart2() {
+      var data = {
+        labels: ["2017/3", "2017/6"],
+        datasets: [{
+            label: "Prime and Fibonacci",
+            fillColor: "rgba(102,153,255,0.2)",
+            strokeColor: "#6699ff",
+            pointColor: "#6699ff",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "#6699ff",
+            data: [51, 67]
+          }
+        ]
+      };
+      var ctx = document.getElementById("lineChart2").getContext("2d");
+      var options = {};
+      var lineChart = new Chart(ctx).Line(data, options);
+    }
+    function displayLineChart3() {
+      var data = {
+        labels: ["2016/11", "2017/3", "2017/6"],
+        datasets: [{
+            label: "Prime and Fibonacci",
+            fillColor: "rgba(102,153,255,0.2)",
+            strokeColor: "#6699ff",
+            pointColor: "#6699ff",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "#6699ff",
+            data: [78, 89, 92]
+          }
+        ]
+      };
+      var ctx = document.getElementById("lineChart3").getContext("2d");
+      var options = {};
+      var lineChart = new Chart(ctx).Line(data, options);
+    }
+    function displayLineChart4() {
+      var data = {
+        labels: ["2016/9", "2016/11", "2017/3", "2017/6"],
+        datasets: [{
+            label: "Prime and Fibonacci",
+            fillColor: "rgba(102,153,255,0.2)",
+            strokeColor: "#6699ff",
+            pointColor: "#6699ff",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "#6699ff",
+            data: [61, 64, 79, 83]
+          }
+        ]
+      };
+      var ctx = document.getElementById("lineChart4").getContext("2d");
+      var options = {};
+      var lineChart = new Chart(ctx).Line(data, options);
+    }
+    function displayLineChart5() {
+      var data = {
+        labels: ["2017/3", "2017/6"],
+        datasets: [{
+            label: "Prime and Fibonacci",
+            fillColor: "rgba(102,153,255,0.2)",
+            strokeColor: "#6699ff",
+            pointColor: "#6699ff",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "#6699ff",
+            data: [81, 89]
+          }
+        ]
+      };
+      var ctx = document.getElementById("lineChart5").getContext("2d");
+      var options = {};
+      var lineChart = new Chart(ctx).Line(data, options);
+    }
   </script>
 </head>
 
@@ -74,18 +171,18 @@
   <div class="Review">
     <h1 id="review">Review</h1>
     <table class="ReviewTable">
-      <tr>
+      <tr id="reviewTableTr">
         <td class="ReviewTableArrowTd Desktop">
-          <img class="SlideButton" id="ReviewSlideButton1" src="../img/prev.png">
+          <img class="SlideButton" id="ReviewSlideButton1" src="../img/prev.png" onclick="reviewPrevSlide()">
         </td>
         <td class="ReviewTableTd" id="reviewProfile1">
           <div class="ReviewProfile">
             <div class="ReviewProfileImage">
-              <img id="reviewProfileImage" src="../img/profile.jpg">
+              <img id="reviewProfileImage" src="../img/ProfileMan.png">
             </div>
             <div class="ReviewProfileTitle">
-              <h2>OOO 학생 / 고3</h2>
-              <h4>OOO 선생님과 6개월</h4>
+              <h2>이양석 학생 / 고3</h2>
+              <h4>김재승 선생님 - 영어</h4>
               <img class="ReviewStars" id="star1" src="../img/star.png">
               <img class="ReviewStars" id="star2" src="../img/star.png">
               <img class="ReviewStars" id="star3" src="../img/star.png">
@@ -94,24 +191,22 @@
             </div>
             <div class="ReviewProfileContent">
               <hr>
-              <p>안에 내용은 3줄로 고정</p>
-              <p>안에 내용은 3줄로 고정</p>
-              <p>안에 내용은 3줄로 고정</p>
+              <p>영어는 죽어라해도 안올랐는데 선생님께 배우면서 성적이 많이 올랐고 굉장히 친절하셔서 좋았습니다!</p>
               <hr>
             </div>
             <div class="ReviewProfileGraph">
-              <img id="reviewProfileGraph" src="../img/graph1.jpg">
+              <canvas id="lineChart1" width="314px" height="230px"></canvas>
             </div>
           </div>
         </td>
         <td class="ReviewTableTd" id="reviewProfile2">
           <div class="ReviewProfile">
             <div class="ReviewProfileImage">
-              <img id="reviewProfileImage" src="../img/profile.jpg">
+              <img id="reviewProfileImage" src="../img/ProfileMan.png">
             </div>
             <div class="ReviewProfileTitle">
-              <h2>OOO 학생 / 고3</h2>
-              <h4>OOO 선생님과 6개월</h4>
+              <h2>김민석 학생 / 고1</h2>
+              <h4>김종운 선생님 - 수학</h4>
               <img class="ReviewStars" id="star1" src="../img/star.png">
               <img class="ReviewStars" id="star2" src="../img/star.png">
               <img class="ReviewStars" id="star3" src="../img/star.png">
@@ -120,23 +215,21 @@
             </div>
             <div class="ReviewProfileContent">
               <hr>
-              <p>안에 내용은 3줄로 고정</p>
-              <p>안에 내용은 3줄로 고정</p>
-              <p>안에 내용은 3줄로 고정</p>
+              <p>수학을 혐오했었는데 선생님과 수업은 즐거웠습니다. 덕분에 수학에도 흥미가 생겨 성적도 많이 올랐습니다.</p>
               <hr>
             </div>
             <div class="ReviewProfileGraph">
-              <img id="reviewProfileGraph" src="../img/graph1.jpg">
+              <canvas id="lineChart2" width="314px" height="230px"></canvas>
             </div>
         </td>
         <td class="ReviewTableTd" id="reviewProfile3">
           <div class="ReviewProfile">
             <div class="ReviewProfileImage">
-              <img id="reviewProfileImage" src="../img/profile.jpg">
+              <img id="reviewProfileImage" src="../img/ProfileWoman.png">
             </div>
             <div class="ReviewProfileTitle">
-              <h2>OOO 학생 / 고3</h2>
-              <h4>OOO 선생님과 6개월</h4>
+              <h2>권채현 학생 / 고3</h2>
+              <h4>김현지 선생님 - 수학</h4>
               <img class="ReviewStars" id="star1" src="../img/star.png">
               <img class="ReviewStars" id="star2" src="../img/star.png">
               <img class="ReviewStars" id="star3" src="../img/star.png">
@@ -145,28 +238,74 @@
             </div>
             <div class="ReviewProfileContent">
               <hr>
-              <p>안에 내용은 3줄로 고정</p>
-              <p>안에 내용은 3줄로 고정</p>
-              <p>안에 내용은 3줄로 고정</p>
+              <p>항상 시간이 부족했었는데 과외를 받으면서 시간관리와 요령을 배우고 나니 성적이 바로 올랐어요!감사합니다~~</p>
               <hr>
             </div>
             <div class="ReviewProfileGraph">
-              <img id="reviewProfileGraph" src="../img/graph1.jpg">
+              <canvas id="lineChart3" width="314px" height="230px"></canvas>
+            </div>
+          </div>
+        </td>
+        <td class="ReviewTableTd" id="reviewProfile4">
+          <div class="ReviewProfile">
+            <div class="ReviewProfileImage">
+              <img id="reviewProfileImage" src="../img/ProfileMan.png">
+            </div>
+            <div class="ReviewProfileTitle">
+              <h2>송인범 학생 / 고2</h2>
+              <h4>김재승 선생님 - 영어</h4>
+              <img class="ReviewStars" id="star1" src="../img/star.png">
+              <img class="ReviewStars" id="star2" src="../img/star.png">
+              <img class="ReviewStars" id="star3" src="../img/star.png">
+              <img class="ReviewStars" id="star4" src="../img/star.png">
+              <img class="ReviewStars" id="star5" src="../img/star.png">
+            </div>
+            <div class="ReviewProfileContent">
+              <hr>
+              <p>공부와는 담 쌓고 지냈는데 과외받으면서 다른 과목도 열심히 하게 되었습니다. 잘 이끌어주셔서 너무 감사합니다!</p>
+              <hr>
+            </div>
+            <div class="ReviewProfileGraph">
+              <canvas id="lineChart4" width="314px" height="230px"></canvas>
+            </div>
+          </div>
+        </td>
+        <td class="ReviewTableTd" id="reviewProfile5">
+          <div class="ReviewProfile">
+            <div class="ReviewProfileImage">
+              <img id="reviewProfileImage" src="../img/ProfileWoman.png">
+            </div>
+            <div class="ReviewProfileTitle">
+              <h2>김예지 학생 / 고1</h2>
+              <h4>유주원 선생님 - 수학</h4>
+              <img class="ReviewStars" id="star1" src="../img/star.png">
+              <img class="ReviewStars" id="star2" src="../img/star.png">
+              <img class="ReviewStars" id="star3" src="../img/star.png">
+              <img class="ReviewStars" id="star4" src="../img/star.png">
+              <img class="ReviewStars" id="star5" src="../img/star.png">
+            </div>
+            <div class="ReviewProfileContent">
+              <hr>
+              <p>중학교에 비해 수학이 너무 어려웠는데 예습, 복습까지 꼼꼼이 관리해주셔서 쉽고 재밌게 하고있어요 ㅎㅎ</p>
+              <hr>
+            </div>
+            <div class="ReviewProfileGraph">
+              <canvas id="lineChart5" width="314px" height="230px"></canvas>
             </div>
           </div>
         </td>
         <td class="ReviewTableArrowTd Desktop">
-          <img class="SlideButton" id="ReviewSlideButton2" src="../img/next.png">
+          <img class="SlideButton" id="ReviewSlideButton2" src="../img/next.png" onclick="reviewNextSlide()">
         </td>
       </tr>
     </table>
     <table class="Mobile ReviewSlide">
       <tr>
         <td class="ReviewTableArrowTd">
-          <img class="SlideButton" id="ReviewSlideButton1" src="../img/prev.png">
+          <img class="SlideButton" id="ReviewSlideButton1" src="../img/prev.png" onclick="reviewPrevSlide()">
         </td>
         <td class="ReviewTableArrowTd">
-          <img class="SlideButton" id="ReviewSlideButton2" src="../img/next.png">
+          <img class="SlideButton" id="ReviewSlideButton2" src="../img/next.png" onclick="reviewNextSlide()">
         </td>
       </tr>
     </table>

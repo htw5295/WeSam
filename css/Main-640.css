@@ -133,12 +133,16 @@ Table {
   text-align: center;
 }
 
-#reviewProfile2, #reviewProfile3 {
+#reviewProfile2, #reviewProfile3, #reviewProfile4, #reviewProfile5 {
   display: none;
 }
 
+.ReviewSlide {
+  width: 100%;
+}
+
 .ReviewSlide td {
-  width: 160px;
+  width: 50%;
   padding: 0px;
   text-align: center;
 }
